@@ -12,7 +12,7 @@ pipeline{
         stage('Git checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/HVAksh/Devops-Project1.git'
+                url: 'https://github.com/HVAksh/Devops-Basic-Project1.git'
             }
         }
         stage('mvn build') {
