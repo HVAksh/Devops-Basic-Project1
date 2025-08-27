@@ -28,7 +28,7 @@ pipeline{
                         docker tag  maven-app hvaksh/maven-app:1.1.1
                         docker tag  maven-app hvaksh/maven-app:latest
                         docker push hvaksh/maven-app:latest
-                        docker push maven-app hvaksh/maven-app:1.1.1'''
+                        docker push hvaksh/maven-app:1.1.1'''
                     }
                 }
                 
