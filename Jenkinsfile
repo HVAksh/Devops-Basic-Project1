@@ -25,7 +25,7 @@ pipeline{
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub') {
                         sh '''docker build -t maven-app .
-                        docker tag  maven-app hvaksh/maven-app:1.1.1
+                        docker tag  maven-app hvaksh/maven-app:1.1.2
                         docker tag  maven-app hvaksh/maven-app:latest
                         docker push hvaksh/maven-app:latest'''
                     }
@@ -35,8 +35,8 @@ pipeline{
         }
         stage('Deploy on local') {
             steps {
-                sh 'docker stop maven-app'
-                sh 'docker rm maven-app'
+             //   sh 'docker stop maven-app'
+             //   sh 'docker rm maven-app'
                 sh 'docker run -d -p 9001:8080 --name maven-app -t hvaksh/maven-app:latest'
             }
         }
