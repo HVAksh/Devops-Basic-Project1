@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1><font color='Brown'> Welcome to KR Cloud Youtube Channel, v:1.1.1 <font></h1>
+<h1><font color='Brown'> Welcome to KR Cloud Youtube Channel, v:1.1.2 <font></h1>
 
 <a href="https://www.youtube.com/@LinuxWaleGuruji">Click Here To See our youtube Channel</a>
   
