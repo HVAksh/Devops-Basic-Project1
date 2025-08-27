@@ -35,8 +35,8 @@ pipeline{
         }
         stage('Deploy on local') {
             steps {
-             //   sh 'docker stop maven-app'
-             //   sh 'docker rm maven-app'
+                sh 'docker stop maven-app'
+                sh 'docker rm maven-app'
                 sh 'docker run -d -p 9001:8080 --name maven-app -t hvaksh/maven-app:latest'
             }
         }
