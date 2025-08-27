@@ -25,9 +25,10 @@ pipeline{
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub') {
                         sh '''docker build -t maven-app .
-                        docker tag  maven-app hvaksh/maven-app:1.1.2
+                        docker tag  maven-app hvaksh/maven-app:1.1.1
                         docker tag  maven-app hvaksh/maven-app:latest
-                        docker push hvaksh/maven-app:latest'''
+                        docker push hvaksh/maven-app:latest
+                        docker push maven-app hvaksh/maven-app:1.1.1'''
                     }
                 }
                 
